@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Phishing Awareness Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Phishing Awareness Demo</h1>
+    <p>Learn how to spot phishing emails and protect yourself online.</p>
+  </header>
+
+  <main>
+    <!-- Section 1: Example Email -->
+    <section class="card email-demo">
+      <h2>Suspicious Email Example</h2>
+      <div class="email-box">
+        <p><strong>From:</strong> support@bank-secure-login.com</p>
+        <p><strong>Subject:</strong> Urgent: Verify Your Account</p>
+        <p>
+          Dear User,<br />
+          Your account will be suspended in 24 hours due to unusual activity.
+          <a href="#">Click here to verify now</a>.
+        </p>
+      </div>
+      <button class="btn" onclick="revealTip('tip1')">Is this Safe?</button>
+      <p id="tip1" class="hint hidden">❌ This is phishing! Suspicious domain, urgency, and fake link.</p>
+    </section>
+
+    <!-- Section 2: Quick Quiz -->
+    <section class="card quiz">
+      <h2>Quick Quiz</h2>
+      <p>Which of these is the safer login domain?</p>
+      <div class="btn-row">
+        <button class="btn outline" onclick="checkQuiz(false)">http://paypal-login.com</button>
+        <button class="btn outline" onclick="checkQuiz(true)">https://www.paypal.com</button>
+      </div>
+      <p id="quiz-result" class="hint"></p>
+    </section>
+
+    <!-- Section 3: Tips -->
+    <section class="card tips">
+      <h2>Safety Tips</h2>
+      <ul>
+        <li>✔ Check the sender’s email carefully.</li>
+        <li>✔ Hover over links before clicking.</li>
+        <li>✔ Look for HTTPS and known domains.</li>
+        <li>✔ Don’t share personal info via suspicious links.</li>
+        <li>✔ Report suspicious messages.</li>
+      </ul>
+    </section>
+
+    <!-- Section 4: Email Safety Checker -->
+    <section class="card checker">
+      <h2>Email Safety Checker</h2>
+      <p>Enter an email address to check for red flags:</p>
+      <div class="input-row">
+        <input type="text" id="emailInput" placeholder="e.g. support@bank-secure-login.com" />
+        <button class="btn" onclick="checkEmail()">Check</button>
+      </div>
+      <div id="check-result" class="hint"></div>
+    </section>
+
+    <!-- Section 5: Website/URL Safety Checker -->
+    <section class="card checker">
+      <h2>Website / URL Safety Checker</h2>
+      <p>Enter a website link to check if it looks suspicious:</p>
+      <div class="input-row">
+        <input type="text" id="urlInput" placeholder="e.g. http://paypal-login.com" />
+        <button class="btn" onclick="checkURL()">Check</button>
+      </div>
+      <div id="url-result" class="hint"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Cybersecurity Awareness Project • Built with ❤️ using HTML, CSS, JS</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
