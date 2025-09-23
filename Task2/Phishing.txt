@@ -1,0 +1,8 @@
+As in my phishing Awareness Demo project, I have checked the wheather email ids contains phishing related keywords and also same for Urls
+
+What we shall check in emails and website:
+ 1) We must check the senders email carefully
+ 2) we must check the links and domain
+
+eg)https://paytm.com     and      https://paytrn
+      (Correct)                       (Fake)
