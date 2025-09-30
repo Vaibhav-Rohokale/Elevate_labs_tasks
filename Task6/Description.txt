@@ -1,0 +1,9 @@
+A strong password is defined by three main factors:
+
+Length: This is the most important factor. Aim for 14 characters or more (a long passphrase is best, like "BlueDogCloudStapler").
+
+Randomness: Avoid common dictionary words, names, birthdays, or keyboard patterns.
+
+Complexity: Include a mix of uppercase letters, lowercase letters, numbers, and symbols.
+
+Ultimately, a strong password is one that would take a computer billions of years to guess, and the easiest way to achieve this is using a Password Manager to create unique, long passwords for every account.
